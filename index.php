@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title> Mod-Goiya</title>
     <link rel="stylesheet" type="text/css" href="css/home-styles.css">
 </head>
 

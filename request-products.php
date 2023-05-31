@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<?php include('Hedder.php'); ?>
+<?php include('nav-bar.php'); ?>
 <div class="full-box">
         <h2>Item Name</h2>
         <div class="container">

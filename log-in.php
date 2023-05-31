@@ -9,14 +9,14 @@
 </Head>
 <body >
 
-<div class="navb"><?php include('Hedder.php'); ?></div>
+<div class="navb"><?php include('nav-bar.php'); ?></div>
 
 
     <div class="login_form">
     <div class="container">
             <div class="selection">
                 <div class="selection1">
-                    <a href="Register.php"> <h2>Register</h2></a>
+                    <a href="registration.php"> <h2>Register</h2></a>
                 </div>
                <div class="selection2">
                     <div class="reg">
@@ -40,7 +40,7 @@
                 </tr>
                 <tr class="logalert">
                     <td class="login-alert">
-                        <p>If you haven't an account?  <a href="Register.php">Click here</a></p>
+                        <p>If you haven't an account?  <a href="registration.php">Click here</a></p>
                     </td>
                  </tr>    
                 <tr class="button-login">

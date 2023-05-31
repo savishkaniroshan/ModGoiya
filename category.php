@@ -5,7 +5,7 @@
 
     </head>
     <body>
-    <div class="navb"><?php include('Hedder.php'); ?></div>
+    <div class="navb"><?php include('nav-bar.php'); ?></div>
       <div class="container">
         <div class="background-image"></div>
         <div class="content">

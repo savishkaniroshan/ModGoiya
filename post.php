@@ -11,7 +11,7 @@
     </head>
     <body>
       <div class="navb">
-      <?php include('Hedder.php'); ?>
+      <?php include('nav-bar.php'); ?>
 
       </div>
       <div class="container">

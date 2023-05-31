@@ -10,7 +10,7 @@
 <body>
 
 
-<div class="navb"><?php include('Hedder.php'); ?></div>
+<div class="navb"><?php include('nav-bar.php'); ?></div>
 <?php require_once('inc/conn.php'); ?>
 <div class="f">
 
@@ -23,10 +23,10 @@
                     </div>
                  </div>
                 <div class="selection2">
-                    <a href="Log in.php"><h2>Log in</h2></a> 
+                    <a href="log-in.php"><h2>Log in</h2></a> 
                 </div>
             </div>
-            <form action="Register.php" method="post">
+            <form action="registration.php" method="post">
                 <table class="content">
                     <tr class="form-data">
                         <td class="input-box">
@@ -83,7 +83,7 @@
                         </tr> 
                         <tr>  
                         <td class="alert" colspan="2">
-                            <p>If you already have an account?  <a href="Log in.php">Click here</a></p>
+                            <p>If you already have an account?  <a href="log-in.php">Click here</a></p>
                         </td> 
                     </tr>   
                     <tr>
