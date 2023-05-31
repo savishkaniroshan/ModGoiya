@@ -104,7 +104,7 @@
             $encrypted_password = md5($password);
 
             // Write user data to the database
-            $query_to_write_user_data = "INSERT INTO users (first_name, last_name, email, password, tp, isFarmer, gender) VALUES ('$first_name', '$last_name', '$email', '$password', '$tp', false, '$gender')";
+            $query_to_write_user_data = "INSERT INTO users (first_name, last_name, email, password, tp, isFarmer, gender) VALUES ('$first_name', '$last_name', '$email', '$encrypted_password', '$tp', false, '$gender')";
 
             // executing the above quory 
             mysqli_query($db_connection, $query_to_write_user_data);

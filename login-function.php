@@ -52,7 +52,7 @@
       if (mysqli_num_rows($results)) {
 
         // getting email addresses from the database
-        $fetch_all_user_data = "SELECT * from user WHERE email = '$email' LIMIT 1";
+        $fetch_all_user_data = "SELECT * from users WHERE email = '$email' LIMIT 1";
         // executing the above query
         $results = mysqli_query($db_connection, $fetch_all_user_data);
         // put all user data into a temporary array

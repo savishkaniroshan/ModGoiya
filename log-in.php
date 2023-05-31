@@ -24,12 +24,12 @@
                     </div>
                </div>
             </div>
-        <form action="submit" method="get">
+        <form action="login-function.php" method="post" >
             <Table class="form-card">
                 <tr>
                         <td class="card-text">
-                                 <label for="username">User name</label>
-                                 <input type="text" placeholder="Enter User name" name="uname" >
+                                 <label for="email">Email Address</label>
+                                 <input type="email" placeholder="Enter email address" name="email" >
                         </td>
                 </tr>
                 <tr>
@@ -45,7 +45,7 @@
                  </tr>    
                 <tr class="button-login">
                     <td class="login-button">
-                        <button type="submit">Log in</button>
+                        <button type="submit" name="login_user">Log in</button>
                     </td>
                 </tr>
             </Table>
