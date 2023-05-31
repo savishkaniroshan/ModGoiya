@@ -20,14 +20,14 @@
     <nav>
       <ul>
    
-        <li><a href="#">
+        <li><a href="index.php">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="2 0 24 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>Home </a></li>
 
 
         <li><a href="#">Catogory</a></li>
         <li><a href="#">Service</a></li>
         <li><a href="#">Favarite</a></li>
-        <li><a href="#">Account</a></li>
+        <li><a href="log-in.php">Account</a></li>
         </ul>
     </nav>
   </div>
