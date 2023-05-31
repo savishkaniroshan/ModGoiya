@@ -33,14 +33,14 @@
         <?php
 
         // Get the data from the $_POST variable
-        $first_name = mysqli_real_escape_string($db_connection, $_POST['first_name']);
-        $last_name = mysqli_real_escape_string($db_connection, $_POST['last_name']);
+        $first_name = mysqli_real_escape_string($db_connection, $_POST['fname']);
+        $last_name = mysqli_real_escape_string($db_connection, $_POST['lname']);
         $email = mysqli_real_escape_string($db_connection, $_POST['email']);
-        $tp = mysqli_real_escape_string($db_connection, $_POST['tp']);
+        $tp = mysqli_real_escape_string($db_connection, $_POST['phoneNumber']);
         $password = mysqli_real_escape_string($db_connection, $_POST['password']);
-        $confirm_password = mysqli_real_escape_string($db_connection, $_POST['confirm_password']);
+        $confirm_password = mysqli_real_escape_string($db_connection, $_POST['Confirmpassword']);
         $gender = mysqli_real_escape_string($db_connection, $_POST['gender']);
-        $isFarmer = mysqli_real_escape_string($db_connection, $_POST['isFarmer']);
+        $isFarmer = mysqli_real_escape_string($db_connection, $_POST['seller']);
 
         // Checking for errors
         if (empty($first_name)) {
@@ -69,7 +69,7 @@
         }
 
         // Quory to check is the user already exist in the database
-        $user_check_query = "SELECT * from user WHERE email = '$email' LIMIT 1";
+        $user_check_query = "SELECT * from users WHERE email = '$email' LIMIT 1";
 
         // executing the above query
         $results = mysqli_query($db_connection, $user_check_query);
