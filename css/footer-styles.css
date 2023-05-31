@@ -1,0 +1,45 @@
+#footer {
+    background-color: #1b1a1a;
+    height: auto;
+    width: 100%;
+    bottom:0;
+  }
+  
+  .footer-container {
+      max-width: 960px;
+      margin: 0 auto;
+      text-align : center;
+      padding-top: 10px;
+  }
+
+  #footer p {
+      font-size: 14px;
+      color: #888;
+  }
+  .table-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: auto; /* Adjust this to match your desired height */
+}
+
+table {
+border-collapse: collapse;
+}
+
+th, td {
+padding: 8px;
+text-align: left;
+
+}
+
+th {
+background-color: #f2f2f2;
+font-weight: bold;
+}
+#foottr{
+    color: aliceblue;
+    width: 50%;
+    text-align: center;
+    
+}

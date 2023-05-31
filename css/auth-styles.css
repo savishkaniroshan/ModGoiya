@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.login_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    align-items: center;
+    width: 470px;
+    height: 550px;
+    position: relative;
+    border-radius: 5px;
+    max-width: 650px;
+    padding: 28px;
+    box-shadow: 0 15px 20px #abb2b9;
+}
+h2{
+    font-size: 26px;
+    font-weight: 600px;
+    text-align: left;
+    color: #2f4f4f;
+    padding-bottom: 8px;
+    padding-right: 50px;
+}
+.content{
+    border-top: 3px solid #3EA212;
+    padding-top: 0px;
+    width: 100%;
+}
+.input-box{
+    width: 50%;
+    padding-top: 5px;
+}
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+.input-box label, .gender-tittle{
+    width:100%;
+    color: #2f4f4f;
+    font-size: bold;
+}
+.input-lable{
+    padding-bottom: 5px;
+}
+.input-box input{
+    height: 40px;
+    width: 98%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+} 
+.gender-title{
+    font-size: 16px;
+    padding-top: 2px;
+}
+.Gender-category{
+    color: grey;
+    padding-top: 3px;
+}
+.Gender-category label{
+    padding: 0 30px 0px 4px;
+    font-size: 15px;
+}
+.Gender-category label,  .Gender-category input{
+    cursor: pointer;
+}
+.proficien-title{
+    font-size: 16px;
+    padding-top: 2px;
+}
+.proficien{
+    color: grey;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+.proficien label{
+    padding: 0 30px 0px 4px;
+    font-size: 15px;
+}
+.proficien label,  .proficien input{
+    cursor: pointer;
+}
+.alert p{
+    font-size: 14px;
+    color: dimgray;
+    margin: 0px -3px;
+    padding: 0px;
+}
+.alert a{
+    text-decoration: none;
+}
+.alert a:hover{
+    text-decoration: underline;
+}
+.button-container button{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #009900;
+}
+.button-container button:hover{
+    background-image: linear-gradient(to right, #3EA212 ,#81F150 );;
+}
+@media(max-width:600px){
+    .container{
+        min-width: 280px;
+    }
+    .container{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+}
+.form-card{
+    border-top: 3px solid #3EA212;
+    padding-top: 10px;
+    width: 100%;
+    padding: 20px 0px 0px 60px;
+}
+
+.form-card label{
+    margin-left: 4px;
+}
+.form-card input{
+    margin: 0px 10px 10px 4px;
+    height: 40px;
+    width: 85%;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.form-card input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+} 
+.login-alert{
+    padding-left: 60px;
+}
+.login-button {
+    padding-left: 60px;
+    width: 85%;
+}
+.logalert p{
+    font-size: 14px;
+    font-style:normal;
+    color: dimgray;
+    margin: 10px -55px;
+    padding: 5px;
+}
+.logalert a{
+    text-decoration: none;
+}
+.logalert a:hover{
+    text-decoration: underline;
+}
+.button-login button{
+    width: 100%;
+    margin: 0px -50px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #009900;
+}
+.button-login button:hover{
+    background-image: linear-gradient(to right, #3EA212 ,#81F150 );;
+}
+.navb{
+    width: 100%;
+    height: auto;
+}
+.selection{
+    display:flex;
+    flex-direction: row;
+    height: 50px;
+    width: 600px;
+}
+  .selection1 h2{
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .selection2 h2{
+    text-align: center;
+    margin-left: 60px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  
+  .selection1:hover, .selection1:active, .selection2:hover, .selection2:active {
+    background-image: linear-gradient(to right, #3EA212 ,#81F150 ); 
+  }
+.selection1 a, .selection2 a{
+    text-decoration: none;
+}
+.reg{
+    padding-bottom: 11px;
+    background-image: linear-gradient(to right, #3EA212 ,#81F150 );
+}

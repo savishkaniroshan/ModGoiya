@@ -1,0 +1,87 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+	 
+    } 
+
+    #post {
+      margin: 0 auto;
+      width: 70%;
+      height: auto;
+      display: flex;
+	    align-items:center;
+	    padding-bottom : 20px;
+	    padding-top: 20px;
+	    box-shadow:0 15px 20px #abb2b9;
+     
+	 
+    }
+    #postt{
+      text-align: center;
+      width: 100%;
+      height: auto;
+     
+    }
+
+    #imagerow{
+      text-align: center;
+      height: auto;
+
+      
+  
+    }
+    
+    #iteamname{
+      text-align: center;
+      font-style:italic;
+      height: 30px;
+    
+    }
+    #row{
+      text-align: center;
+      height: 20px;
+
+    }
+    
+    
+
+    .request-button button:hover{
+      background-image: linear-gradient(to right, #3EA212,#81F150);
+    }
+	
+	#request{
+		 background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+      padding: 10px 40px;
+      
+      
+	  
+	
+	}
+  
+	#favorites{
+		 background-color: green;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+	
+	}
+
+  #reques{
+    text-align: center;
+  }
+
+#page{
+  text-align: center;
+  }
+
+	
