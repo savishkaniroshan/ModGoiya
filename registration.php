@@ -34,32 +34,32 @@
                         <tr class="form-data">
                             <td class="input-box">
                                 <div class="input-lable"><label for="firstname">First name</label></div>
-                                <input type="text" placeholder="Enter your First name" name="fname">
+                                <input type="text" placeholder="Enter your First name" name="fname" required>
                             </td>
                             <td class="input-box">
                                 <div class="input-lable"><label for="lastname">Last name</label></div>
-                                <input type="text" placeholder="Enter Last name" name="lname">
+                                <input type="text" placeholder="Enter Last name" name="lname" required>
                             </td>
                         </tr>
                         <tr class="form-data">
                             <td class="input-box">
                                 <div class="input-lable">
                                     <div class="input-lable"><label for="email">Email</label></div>
-                                    <input type="email" placeholder="Enter your valid email address" name="email">
+                                    <input type="email" placeholder="Enter your valid email address" name="email" required>
                             </td>
                             <td class="input-box">
                                 <div class="input-lable"><label for="phonenumber">Phone number</label></div>
-                                <input type="tel" placeholder="Enter your phone number" name="phoneNumber">
+                                <input type="tel" placeholder="Enter your phone number" name="phoneNumber" required>
                             </td>
                         </tr>
                         <tr class="form-data">
                             <td class="input-box">
                                 <div class="input-lable"><label for="password">Password</label></div>
-                                <input type="password" placeholder="Enter a new password" name="password">
+                                <input type="password" placeholder="Enter a new password" name="password" required>
                             </td>
                             <td class="input-box">
                                 <div class="input-lable"><label for="cpassword">Confirm Password</label></div>
-                                <input type="password" placeholder="Confirm your password" name="Confirmpassword">
+                                <input type="password" placeholder="Confirm your password" name="Confirmpassword" required>
                             </td>
                         </tr>
                         <tr>
@@ -67,9 +67,9 @@
                         </tr>
                         <tr>
                             <td class="Gender-category">
-                                <input type="radio" name="gender" id="male">
+                                <input type="radio" name="gender" id="male" required>
                                 <label for="Gender">Male</label>
-                                <input type="radio" name="gender" id="fmale">
+                                <input type="radio" name="gender" id="fmale" required>
                                 <label for="Gender">Female</label>
                             </td>
                         </tr>
@@ -79,9 +79,9 @@
                         </tr>
                         <tr>
                             <td class="proficien">
-                                <input type="radio" name="seller" id="seller">
+                                <input type="radio" name="isFarmer" id="seller" required>
                                 <label for="proficien">Seller</label>
-                                <input type="radio" name="buyer" id="buyer">
+                                <input type="radio" name="isFarmer" id="buyer" required>
                                 <label for="proficien">Buyer</label>
                             </td>
                         </tr>

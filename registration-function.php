@@ -24,11 +24,11 @@
 
     ?>
 
-        <pre>
-            <?php
+        <!-- <pre>
+            </?php
             print_r($_POST);
             ?>
-        </pre>
+        </pre> -->
 
         <?php
 
@@ -40,7 +40,7 @@
         $password = mysqli_real_escape_string($db_connection, $_POST['password']);
         $confirm_password = mysqli_real_escape_string($db_connection, $_POST['Confirmpassword']);
         $gender = mysqli_real_escape_string($db_connection, $_POST['gender']);
-        $isFarmer = mysqli_real_escape_string($db_connection, $_POST['seller']);
+        $isFarmer = mysqli_real_escape_string($db_connection, $_POST['isFarmer']);
 
         // Checking for errors
         if (empty($first_name)) {

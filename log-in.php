@@ -29,13 +29,13 @@
                 <tr>
                         <td class="card-text">
                                  <label for="email">Email Address</label>
-                                 <input type="email" placeholder="Enter email address" name="email" >
+                                 <input type="email" placeholder="Enter email address" name="email" required>
                         </td>
                 </tr>
                 <tr>
                         <td class="card-text">
                                  <label for="password">Password</label>
-                                 <input type="password" placeholder="Enter a new password" name="password" >
+                                 <input type="password" placeholder="Enter a new password" name="password" required>
                         </td>
                 </tr>
                 <tr class="logalert">
