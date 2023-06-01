@@ -32,7 +32,7 @@ $all_ads;
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                     <circle cx="12" cy="7" r="4"></circle>
-                                </svg> Savishka Niroshan</a></h3>
+                                </svg> Person who posted </a></h3>
                     </td>
                 </tr>
                 <tr>
@@ -52,7 +52,7 @@ $all_ads;
                 </tr>
 
                 <tr id="button" class="request-button">
-                    <td id="reques"><button id="request" > <a href="request-products.php" style="text-decoration:none">Request</a>  </button></td>
+                    <td id="reques"><button id="request"> <a href="request-products.php" style="text-decoration:none">Request</a> </button></td>
                     <td id="reques"> <button id="favorites">Add to Favorites</button></td>
                 </tr>
 

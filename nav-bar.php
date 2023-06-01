@@ -46,7 +46,7 @@ if (isset($_GET['logout']) and ($_GET['logout'] == 1)) {
         <?php } ?>
 
       </ul>
-      <h1 style="color:white;text-align:right;">Hi <span>My_Accout_Name</span></h1>
+      <h1 style="color:white;text-align:right;">Hi <span><?php echo $_SESSION["first_name"] ?> <?php echo $_SESSION["last_name"] ?></span></h1>
     </nav>
   </div>
 
