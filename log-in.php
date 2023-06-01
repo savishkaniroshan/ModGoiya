@@ -14,15 +14,9 @@
 
     <div class="login_form">
     <div class="container">
-            <div class="selection">
-                <div class="selection1">
-                    <a href="registration.php"> <h2>Register</h2></a>
-                </div>
-               <div class="selection2">
-                    <div class="reg">
-                        <h2>Log in</h2>
-                    </div>
-               </div>
+    <div class="selection">
+                    <ul class="selection1"><li><a href="registration.php"><h2>Register</h2></a></li></ul>               
+                    <ul  class="selection2"><li class="reg"><h2>Log in</h2></li></ul>
             </div>
         <form action="login-function.php" method="post" >
             <Table class="form-card">

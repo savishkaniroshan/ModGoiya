@@ -4,10 +4,14 @@
 .logo{
   background-color: rgba(36, 77, 0, 0.874);
   padding: 10px;
+  position: sticky;
+
 }
 .logoi{
   max-width: 15%;
   height: auto;
+
+  top: 0;
 }
 
 nav{
@@ -24,7 +28,7 @@ li{
   line-height: 70px;
   margin: 5px 5px;
 }
-a{
+.logo nav ul li a{
   font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -33,45 +37,14 @@ a{
   border-radius: 3px;
   padding: 30px 14px ;
 }
-a:hover{
+.logo nav ul li a:hover{
   background: #12210f;
   transform: .5s;
 }
 
-/* search bar */
-.boxContainer{
-
-  margin: 4px 60px;
-  width: 90%;
-  height: 50px;
-  border: 4px solid  rgba(36, 77, 0, 0.874);
-  padding: 0px 10px;
-  border-radius: 50px;
-  vertical-align: center;
-
-}
-.elementContainer{
+.sticky {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 100%;
-  vertical-align: middle;
+}
 
-}
-.serch{
-
-  border: none;
-  height: 100%;
-  width: 100%;
-  padding:0px 10px;
-  border-radius: 50px;
-  font-size: 18px;
-  font-family: "Nunito";
-  
-}
-.serch:focus{
-  outline: none;
-}
-.meterial-icons{
-
-  font-size: 26px;
-  color: #38d515;
-}

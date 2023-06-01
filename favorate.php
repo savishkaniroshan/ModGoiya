@@ -4,9 +4,6 @@
 <head>
     <title> Mod-Goiya</title>
     <link rel="stylesheet" type="text/css" href="css/home-styles.css">
-    <script src="https://kit.fontawesome.com/69b0f7ac87.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -15,10 +12,6 @@
 
     <div id="post">
         <table id="postt">
-        <tr>
-        <td><h3><a class="link" href="profile_view.php" style="text-decoration:none">
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>  Savishka Niroshan</a></h3></td>
-            </tr>
             <tr>
                 <td colspan="2" id="imagerow"><img src="assets/image001.jpg" width="70%" height="50%"></td>
             </tr>
@@ -37,7 +30,7 @@
 
             <tr id="button" class="request-button">
                 <td id="reques"><button id="request">Request</button></td>
-                <td id="reques"> <button id="favorites">Add to Favorites</button></td>
+                
             </tr>
 
         </table>
@@ -63,7 +56,7 @@
 
             <tr id="button" class="request-button">
                 <td id="reques"><button id="request">Request</button></td>
-                <td id="reques"> <button id="favorites">Add to Favorites</button></td>
+                
             </tr>
 
         </table>
@@ -89,7 +82,7 @@
 
             <tr id="button" class="request-button">
                 <td id="reques"><button id="request">Request</button></td>
-                <td id="reques"> <button id="favorites">Add to Favorites</button></td>
+                
             </tr>
 
         </table>
@@ -115,7 +108,7 @@
 
             <tr id="button" class="request-button">
                 <td id="reques"><button id="request">Request</button></td>
-                <td id="reques"> <button id="favorites">Add to Favorites</button></td>
+                
             </tr>
 
         </table>
@@ -141,7 +134,7 @@
 
             <tr id="button" class="request-button">
                 <td id="reques"><button id="request">Request</button></td>
-                <td id="reques"> <button id="favorites">Add to Favorites</button></td>
+                
             </tr>
 
         </table>

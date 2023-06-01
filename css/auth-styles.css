@@ -198,23 +198,20 @@ h2{
 }
 .selection{
     display:flex;
-    flex-direction: row;
-    height: 50px;
-    width: 600px;
+    flex-wrap:wrap;
 }
-  .selection1 h2{
+ul{
+    list-style-type: none;
+}
+  .selection2 h2, .selection1 h2{
     text-align: center;
-    margin-left: 40px;
-    margin-top: 10px;
-    padding-bottom: 0px;
+    margin-left: 55px;
+    padding-bottom: 7px;
     padding-top: 0px;
   }
   .selection2 h2{
-    text-align: center;
-    margin-left: 60px;
-    margin-top: 10px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    margin-left: 30px;
+    padding-left: 46px;
   }
   
   .selection1:hover, .selection1:active, .selection2:hover, .selection2:active {
@@ -224,6 +221,5 @@ h2{
     text-decoration: none;
 }
 .reg{
-    padding-bottom: 11px;
     background-image: linear-gradient(to right, #3EA212 ,#81F150 );
 }

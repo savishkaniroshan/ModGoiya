@@ -17,18 +17,10 @@
 
         <div class="login_form">
             <div class="container">
-                <div class="selection">
-                    <div class="selection1">
-                        <div class="reg">
-                            <h2>Register</h2>
-                        </div>
-                    </div>
-                    <div class="selection2">
-                        <a href="log-in.php">
-                            <h2>Log in</h2>
-                        </a>
-                    </div>
-                </div>
+            <div class="selection">
+                    <ul class="selection1"><li class="reg"><h2>Register</h2></li></ul>                
+                    <ul class="selection2"><li><a href="log-in.php"><h2>Log in</h2></a></li></ul>
+            </div>
                 <form action="registration-function.php" method="post">
                     <table class="content">
                         <tr class="form-data">

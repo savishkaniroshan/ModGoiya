@@ -6,50 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/nav-bar-styles.css">
-  <script src="https://kit.fontawesome.com/69b0f7ac87.js" crossorigin="anonymous"></script>
- 
-
+  
 
 
 </head>
 <body>
 
   <!-- navigation bar -->
-  <div class="logo">
+  <div class="logo" id="mylogo">
     <img src="assets/MOD GOIYA LOGO.png" alt="ModGoiya" class="logoi">
     <nav>
       <ul>
-   
-        <li><a href="index.php">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="2 0 24 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>Home </a></li>
-
-
-        <li><a href="#">Catogory</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Favarite</a></li>
+        <li><a href="post.php">create post</a></li>
+        <li><a href="index.php" > Home</a></li>
+        <li><a href="Category.php">Catogory</a></li>
+        <li><a href="service.php">Service</a></li>
+        <li><a href="favorate.php">Favarite</a></li>
         <li><a href="log-in.php">Account</a></li>
+        <li><a href="#">LOG OUT</a></li>
         </ul>
+        <h1 style="color:white;text-align:right;">Hi <span>My_Accout_Name</span></h1>
     </nav>
   </div>
 
-  <!-- serch bar -->
-  <div class="boxContainer">
-    <table class="elementContainer">
-      <tr>
-        <td>
-          <input type="text" placeholder="Serch here" class="serch">
-        </td>
-        <td>
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></td>
-      </tr>
+  <script>
+window.onscroll = function() {myFunction()};
 
+var logo = document.getElementById("mylogo");
+var sticky = logo.offsetTop;
 
-    </table>
-    
-
-
-  </div>
- 
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    logo.classList.add("sticky");
+  } else {
+    logo.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
