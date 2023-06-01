@@ -36,7 +36,7 @@ $all_ads;
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" id="imagerow"><img src="assets/image001.jpg" width="70%" height="50%"></td>
+                    <td colspan="2" id="imagerow"><img src="<?php echo $item['image_url'] ?? "img/covers/image (19).jpg" ?>" width="70%" height="50%"></td>
                 </tr>
                 <tr>
                     <td id="iteamname" colspan="2"><?php echo $item['title'] ?></td>
