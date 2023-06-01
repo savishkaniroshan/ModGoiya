@@ -52,7 +52,7 @@ $all_ads;
                 </tr>
 
                 <tr id="button" class="request-button">
-                    <td id="reques"><button id="request">Request</button></td>
+                    <td id="reques"><button id="request" > <a href="request-products.php" style="text-decoration:none">Request</a>  </button></td>
                     <td id="reques"> <button id="favorites">Add to Favorites</button></td>
                 </tr>
 
