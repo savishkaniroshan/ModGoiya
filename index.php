@@ -25,9 +25,9 @@ $all_ads;
 
     <?php foreach ($all_ads as $item) { ?>
         <div id="post">
-            <table id="postt">
+             <table id="postt">
                 <tr>
-                    <td>
+                    <td colspan="2">
                         <h3><a class="link" href="profile_view.php" style="text-decoration:none">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -36,7 +36,7 @@ $all_ads;
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" id="imagerow"><img src="<?php echo $item['image_url'] ?? "img/covers/image (19).jpg" ?>" width="70%" height="50%"></td>
+                    <td colspan="2" id="imagerow"><img src="<?php echo $item['image_url'] ?? "img/covers/image (19).jpg" ?>" width="50%" height="40%"></td>
                 </tr>
                 <tr>
                     <td id="iteamname" colspan="2"><?php echo $item['title'] ?></td>
