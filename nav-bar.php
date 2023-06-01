@@ -30,13 +30,11 @@ if (isset($_GET['logout']) and ($_GET['logout'] == 1)) {
     <img src="assets/MOD GOIYA LOGO.png" alt="ModGoiya" class="logoi">
     <nav>
       <ul>
-        <li><a href="post.php">create post</a></li>
+        <li><a href="add-post.php">add post</a></li>
         <li><a href="index.php"> Home</a></li>
         <li><a href="Category.php">Catogory</a></li>
         <li><a href="service.php">Service</a></li>
-        <li><a href="favorate.php">Favarite</a></li>
-        <!-- <li><a href="log-in.php">Account</a></li>
-        <li><a href="#">LOG OUT</a></li> -->
+        <li><a href="favorate.php">Favorite</a></li>
 
         <?php if ($_SESSION['email'] == "") { ?>
           <li><a href="log-in.php" class="custom-link">Log In</a></li>
