@@ -38,7 +38,7 @@
               </tr> -->
 
               <tr>
-                <td><label for="formFile" class="form-label browse custom-label">Add image: </label></td>
+                <td><label for="image" class="form-label browse custom-label">Add image: </label></td>
                 <td>
                   <!-- <div class="ml-2">
                         <img style="height: 300px; width: 230px;" src="../img/covers/sample.jpg" id="preview" class="img-thumbnail">
