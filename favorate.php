@@ -23,7 +23,7 @@ $all_favorites;
         <div id="post">
             <table id="postt">
                 <tr>
-                    <td colspan="2" id="imagerow"><img src="assets/image001.jpg" width="70%" height="50%"></td>
+                    <td colspan="2" id="imagerow"><img src="<?php echo $fav['image_url']?>" width="70%" height="50%"></td>
                 </tr>
                 <tr>
                     <td id="iteamname" colspan="2"><?php echo $fav['title'] ?></td>
