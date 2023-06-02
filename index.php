@@ -4,7 +4,7 @@
 <?php require_once 'call-get-data-functions.php'; ?>
 
 <?php
-// Shuffle all the advertistments
+// All the advertistments
 $all_ads;
 ?>
 
