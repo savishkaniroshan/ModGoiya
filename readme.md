@@ -6,11 +6,6 @@ Owners: Savishka Niroshan, Charuka Abeysinghe, Lahiru Sampath
 
 This is a starting point for this web application.
 
-TODO LIST
-
-- Fething data from database for the categories section
-- Adding items to the favorites section
-
 For help getting started with PHP development, view the
 [online documentation](https://www.php.net/), which offers tutorials,
 samples, guidance on web development, and a full API reference.
