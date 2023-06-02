@@ -58,6 +58,10 @@
                   </select>
                 </td>
               </tr>
+              <tr class="title">
+                <td><label for="title">Title:</label></td>
+                <td><input type="text" id="title" name="title" placeholder="Enter the title" required></td>
+              </tr>
               <tr class="qty">
                 <td><label for="qty">Number of Kilos:</label></td>
                 <td><input type="text" id="qty" name="qty" placeholder="Enter the amount" required></td>

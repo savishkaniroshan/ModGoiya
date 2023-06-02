@@ -34,6 +34,7 @@
 
     // Get the data from the $_POST variable
     // $photo_url = mysqli_real_escape_string($db_connection, $_POST['image']);
+    $title = mysqli_real_escape_string($db_connection, $_POST['title']);
     $category = mysqli_real_escape_string($db_connection, $_POST['category']);
     $qty = mysqli_real_escape_string($db_connection, $_POST['qty']);
     $price_of_one_kilo = mysqli_real_escape_string($db_connection, $_POST['price_of_one_kilo']);
@@ -51,9 +52,13 @@
     echo $location_of_product;
     echo $contact_number;
     echo $description;
+    echo $title;
 
 
     // Checking for errors
+    if (empty($title)) {
+      array_push($add_post_errors, "title is required");
+    }
     if (empty($category)) {
       array_push($add_post_errors, "category is required");
     }
@@ -103,14 +108,13 @@
       $file_uploaded = move_uploaded_file($temp_name, $image_path);
 
       // Write user data to the database
-      $query_to_write_add_data = "INSERT INTO advertisements (title, description, email, quntity, unit_price, location, image_url) VALUES ('$category', '$description', '{$_SESSION['email']}', '$qty', '$price_of_one_kilo', '$location_of_product', '$image_path')";
+      $query_to_write_add_data = "INSERT INTO advertisements (title, category, description, email, quntity, unit_price, location, image_url) VALUES ('$title', '$category', '$description', '{$_SESSION['email']}', '$qty', '$price_of_one_kilo', '$location_of_product', '$image_path')";
 
       // executing the above quory 
       mysqli_query($db_connection, $query_to_write_add_data);
 
     ?>
 
-      // Show a success message
       <script>
         Swal.fire({
           icon: 'success',
