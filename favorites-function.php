@@ -6,18 +6,18 @@ ob_start();
 
 class Favorites
 {
-  public $db = null;
+  public $db_connection = null;
 
-  public function __construct(DBController $db)
+  public function __construct(DBController $db_connection)
   {
-    if (!isset($db->con)) return null;
-    $this->db = $db;
+    if (!isset($db_connection->con)) return null;
+    $this->db_connection = $db_connection;
   }
 
-  // insert into favorite table
-  public  function insertIntoFavorite($params = null, $table = "favorite")
+  // insert into favorites table
+  public  function insertIntoFavorite($params = null, $table = "favorites")
   {
-    if ($this->db->con != null) {
+    if ($this->db_connection->con != null) {
       if ($params != null) {
 
         $columns = implode(',', array_keys($params));
@@ -27,7 +27,7 @@ class Favorites
         $query_string = sprintf("INSERT INTO %s(%s) VALUES(%s)", $table, $columns, $values);
 
         // execute query
-        $result = $this->db->con->query($query_string);
+        $result = $this->db_connection->con->query($query_string);
         return $result;
       }
     }
@@ -44,8 +44,8 @@ class Favorites
         "add_id" => $add_id
       );
 
-      $sql = "SELECT add_id FROM favorite";
-      $result = $this->db->con->query($sql);
+      $sql = "SELECT add_id FROM favorites";
+      $result = $this->db_connection->con->query($sql);
 
       //add to cart
       if ($result->num_rows > 0) {
@@ -74,7 +74,7 @@ class Favorites
   public function deleteCart($add_id = null, $table = null)
   {
     if ($add_id != null) {
-      $result = $this->db->con->query("DELETE FROM {$table} WHERE add_id={$add_id}");
+      $result = $this->db_connection->con->query("DELETE FROM {$table} WHERE add_id={$add_id}");
       if ($result) {
         header("Location:" . $_SERVER['PHP_SELF']);
       }

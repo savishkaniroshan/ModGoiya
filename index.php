@@ -8,6 +8,26 @@
 $all_ads;
 ?>
 
+<?php
+
+require_once ('favorites-function.php');
+
+// Creating an instance from the DBController class
+$db = new DBController();
+
+$favorites = new Favorites($db);
+
+if (isset($_POST['favorite_submit'])) {
+  //call add to cart method
+  $favorites->addToFavorite($_POST['user_id'], $_POST['add_id']);
+}
+
+if (isset($_POST['favorite_submit'])) {
+    //call add to cart method
+    $favorites->addToFavorite($_POST['user_id'], $_POST['add_id']);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,9 +72,15 @@ $all_ads;
                 </tr>
 
                 <tr id="button" class="request-button">
-                    <td id="reques"><button id="request"> <a href="request-products.php" style="text-decoration:none">Request</a> </button></td>
-                    <td id="reques"> <button id="favorites">Add to Favorites</button></td>
+                    <form method="POST" action="index.php">
+                        <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id'] ?? '1' ?>">
+                        <input type="hidden" name="add_id" value="<?php echo $item['add_id'] ?? '1' ?>">
+                        <input type="hidden" name="favorite_submit" value="1">
+                        <td id="reques"><button id="request"> <a href="request-products.php" style="text-decoration:none">Request</a> </button></td>
+                        <td id="reques"> <button id="favorites">Add to Favorites</button></td>
+                    </form>
                 </tr>
+
 
             </table>
         </div>
